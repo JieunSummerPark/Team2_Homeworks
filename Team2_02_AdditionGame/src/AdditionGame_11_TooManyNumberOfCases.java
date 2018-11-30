@@ -49,9 +49,6 @@ public class AdditionGame_11_TooManyNumberOfCases {
 			askToChooseCalculation();
 			whichCalculation = input.nextInt();
 
-			// TODO <DONE> 1,2,3,4 말고 다른 거 나왔을 떄 에러표시 만들기
-			// TODO 에러 표시하고 다시 할래 말래 물어보기
-
 			if (whichCalculation!=1 && whichCalculation!=2 && whichCalculation!=3 && whichCalculation!=4) {
 				System.out.println("Try 1, 2, 3, or 4.");
 				break;
@@ -114,11 +111,6 @@ public class AdditionGame_11_TooManyNumberOfCases {
 
 	private static void accounceTheRule() {
 		System.out.println(""
-				+ "\n당신은 지금 3개의 하트를 가지고 있습니다."
-				+ "\n결과에 따라 하트를 더 얻을수도, 잃을수도 있습니다."
-				+ "\n하트를 다 잃으면 게임은 끝납니다."
-				+ "\n하트가 30개를 넘어가면 게임은 엔딩을 맞이하게 됩니다.");
-		System.out.println(""
 				+ "\nFor now, you have 3 hearts."
 				+ "\nYou will get or lose your hearts depends on your result."
 				+ "\n(result = time and the number of wrong)."
@@ -177,7 +169,6 @@ public class AdditionGame_11_TooManyNumberOfCases {
 
 	private static void computing() {
 
-		// TODO 나중에 나눗셈이랑 빼기는 ranNum1 더 큰걸로 정해주기
 		ranNum1 = (int)(Math.random() * 10 + 1 );
 		ranNum2 = (int)(Math.random() * 10 + 1 );
 
